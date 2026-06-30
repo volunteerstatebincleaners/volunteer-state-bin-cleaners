@@ -42,7 +42,7 @@ export default function Navbar() {
         </nav>
         {/* Call Button */}
         <a
-          href="tel:9312788332"
+          href="tel:9312130332"
           className="bg-red-600 hover:bg-red-700 text-white px-6 py-3 rounded-xl font-bold transition"
         >
           Call Now
