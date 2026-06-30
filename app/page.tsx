@@ -23,7 +23,6 @@ export default function Home() {
       <Testimonials />
       <FAQ />
       <QuoteForm />
-      <CallToAction />
       <Footer />
     </>
   );
