@@ -12,12 +12,12 @@ export default function Navbar() {
           <Image
             src="/logo.png"
             alt="Volunteer State Bin Cleaners"
-            width={60}
-            height={60}
+            width={75}
+            height={75}
             priority
           />
           <div>
-            <h1 className="text-2xl font-black text-slate-900">
+            <h1 className="text-3xl font-black text-slate-900">
               Volunteer State
             </h1>
             <span className="block text-red-600 text-base font-bold">
