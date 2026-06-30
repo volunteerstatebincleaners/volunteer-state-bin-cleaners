@@ -12,7 +12,7 @@ export default function QuoteForm() {
           <h2 className="text-5xl font-black mt-6">
             Request Your Free Quote
           </h2>
-          <p className="mt-6 text-gray-300">
+          <p className="mt-6 text-slate-700">
             Fill out the form below and we'll contact you with a free,
             no-obligation estimate.
           </p>

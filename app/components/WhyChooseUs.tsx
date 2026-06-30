@@ -22,7 +22,7 @@ export default function WhyChooseUs() {
     },
   ];
   return (
-    <section className="bg-white py-24">
+    <section className="bg-white shadow-xl border border-slate-200">
       <div className="max-w-7xl mx-auto px-6">
         <div className="text-center mb-16">
           <span className="text-red-600 font-bold uppercase tracking-widest">
@@ -41,7 +41,7 @@ export default function WhyChooseUs() {
           {reasons.map((item) => (
             <div
               key={item.title}
-              className="rounded-3xl border border-slate-200 bg-slate-50 p-8 text-center hover:bg-white hover:shadow-xl transition-all duration-300"
+              className="rounded-3xl border border-slate-200 bg-slate-50 p-8 text-center hover:bg-white shadow-xl border border-slate-200"
             >
               <div className="text-5xl mb-6">
                 {item.icon}

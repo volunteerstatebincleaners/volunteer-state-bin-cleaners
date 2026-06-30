@@ -4,7 +4,7 @@ export default function Navbar() {
 
   return (
 
-    <header className="sticky top-0 z-50 bg-white shadow-md">
+    <header className="sticky top-0 z-50 bg-white shadow-xl border border-slate-200">
 
       <div className="max-w-7xl mx-auto flex items-center justify-between px-6 py-5">
 

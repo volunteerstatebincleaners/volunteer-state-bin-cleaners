@@ -1,6 +1,6 @@
 export default function FAQ() {
   return (
-    <section className="py-24 bg-white">
+    <section className="py-24 bg-white shadow-xl border border-slate-200">
       <div className="max-w-5xl mx-auto px-6">
         <h2 className="text-4xl font-bold text-center mb-12">
           Frequently Asked Questions

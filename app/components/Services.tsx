@@ -26,7 +26,7 @@ export default function Services() {
     }
   ];
   return (
-    <section className="bg-white py-24">
+    <section className="bg-white shadow-xl border border-slate-200">
       <div className="max-w-7xl mx-auto px-6">
         <div className="text-center mb-16">
           <span className="inline-block bg-red-100 text-red-700 px-4 py-2 rounded-full font-semibold">
@@ -45,7 +45,7 @@ export default function Services() {
           {services.map((service) => (
             <div
               key={service.title}
-              className="rounded-3xl border border-slate-200 bg-white shadow-lg hover:shadow-2xl transition-all duration-300 p-8 hover:-translate-y-2"
+              className="rounded-3xl border border-slate-200 bg-white shadow-xl border border-slte-200:shadow-2xl transition-all duration-300 p-8 hover:-translate-y-2"
             >
               <div className="text-5xl mb-6">
                 {service.icon}

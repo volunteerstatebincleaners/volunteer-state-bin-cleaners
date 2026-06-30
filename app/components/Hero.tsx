@@ -22,7 +22,7 @@ export default function Hero() {
 
         </h1>
 
-        <p className="mt-8 text-xl text-gray-300 max-w-2xl">
+        <p className="mt-8 text-xl text-slate-700 max-w-2xl">
 
           We professionally sanitize residential and commercial trash bins
 
@@ -66,7 +66,7 @@ export default function Hero() {
 
             <h2 className="text-4xl font-black text-red-500">200°F</h2>
 
-            <p className="text-gray-300 mt-2">
+            <p className="text-slate-700 mt-2">
 
               Hot Water Cleaning
 
@@ -78,7 +78,7 @@ export default function Hero() {
 
             <h2 className="text-4xl font-black text-red-500">99.9%</h2>
 
-            <p className="text-gray-300 mt-2">
+            <p className="text-slate-700 mt-2">
 
               Bacteria Eliminated
 
@@ -90,7 +90,7 @@ export default function Hero() {
 
             <h2 className="text-4xl font-black text-red-500">100%</h2>
 
-            <p className="text-gray-300 mt-2">
+            <p className="text-slate-700 mt-2">
 
               Satisfaction Guaranteed
 

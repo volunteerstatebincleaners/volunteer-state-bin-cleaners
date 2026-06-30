@@ -9,7 +9,7 @@ export default function Footer() {
           <p className="text-red-500 font-bold">
             Bin Cleaners
           </p>
-          <p className="mt-4 text-gray-400">
+          <p className="mt-4 text-slate-700">
             Professional trash bin cleaning throughout
             Middle Tennessee.
           </p>
@@ -32,7 +32,7 @@ export default function Footer() {
           <p>Sunday Closed</p>
         </div>
       </div>
-      <div className="text-center mt-12 text-gray-500">
+      <div className="text-center mt-12 text-slate-700">
         © 2026 Volunteer State Bin Cleaners. All Rights Reserved.
       </div>
     </footer>

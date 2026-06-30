@@ -42,13 +42,13 @@ export default function ServiceArea() {
 
         <div className="text-center mb-14">
 
-          <h2 className="text-4xl font-bold text-gray-900">
+          <h2 className="text-4xl font-bold text-slate-900">
 
             Proudly Serving Middle Tennessee
 
           </h2>
 
-          <p className="mt-4 text-lg text-gray-600 max-w-2xl mx-auto">
+          <p className="mt-4 text-lg text-slate-800 max-w-2xl mx-auto">
 
             Volunteer State Bin Cleaners provides professional trash bin
 
@@ -78,7 +78,7 @@ export default function ServiceArea() {
 
                   key={city}
 
-                  className="bg-white rounded-xl shadow p-4 hover:shadow-lg transition"
+                  className="bg-white shadow-xl border border-slate-200:shadow-lg transition"
 
                 >
 
