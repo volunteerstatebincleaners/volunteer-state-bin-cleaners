@@ -26,10 +26,10 @@ export default function Services() {
           <span className="bg-red-100 text-red-600 px-4 py-2 rounded-full font-semibold">
             Our Services
           </span>
-          <h2 className="text-5xl font-black mt-6 text-slate-900">
+          <h2 className="text-5xl font-black mt-6 text-slate-950">
             Professional Bin Cleaning
           </h2>
-          <p className="mt-6 text-gray-600 max-w-3xl mx-auto text-lg">
+          <p className="mt-6 text-slate-800 max-w-3xl mx-auto text-lg">
             We help homeowners and businesses eliminate odors, bacteria,
             maggots, and grime using commercial-grade hot water cleaning.
           </p>

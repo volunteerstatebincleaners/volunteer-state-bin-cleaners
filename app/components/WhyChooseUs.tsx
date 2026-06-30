@@ -38,7 +38,7 @@ export default function WhyChooseUs() {
           <h2 className="text-4xl font-black text-[#0B2341]">
             Why Choose Volunteer State Bin Cleaners?
           </h2>
-          <p className="mt-4 text-lg text-gray-600">
+          <p className="mt-4 text-lg text-slate-800">
             Professional bin cleaning with service you can trust.
           </p>
         </div>
@@ -57,7 +57,7 @@ export default function WhyChooseUs() {
                 <h3 className="text-2xl font-bold mb-3">
                   {feature.title}
                 </h3>
-                <p className="text-gray-600 leading-7">
+                <p className="text-slate-800 leading-7">
                   {feature.description}
                 </p>
               </div>
