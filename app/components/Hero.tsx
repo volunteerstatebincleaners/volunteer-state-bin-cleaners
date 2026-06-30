@@ -24,7 +24,7 @@ export default function Hero() {
               Get Free Quote
             </a>
             <a
-              href="tel:6155551234"
+              href="tel:9312130332/9709994536"
               className="border-2 border-white px-8 py-4 rounded-xl font-bold text-lg hover:bg-white hover:text-slate-900 transition"
             >
               Call Now

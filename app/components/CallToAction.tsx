@@ -17,7 +17,7 @@ export default function CallToAction() {
             Get Free Quote
           </a>
           <a
-            href="tel:9312130332"
+            href="tel:9312130332/9709994536"
             className="border-2 border-white px-8 py-4 rounded-xl font-bold"
           >
             Call (931) 213-0332
