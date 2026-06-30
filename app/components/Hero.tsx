@@ -1,109 +1,63 @@
 export default function Hero() {
-
   return (
-
     <section className="bg-slate-900 text-white">
-
       <div className="max-w-7xl mx-auto px-6 py-28">
-
-        <span className="bg-red-600 px-4 py-2 rounded-full text-sm font-semibold">
-
-          Middle Tennessee's Premium Bin Cleaning Service
-
-        </span>
-
-        <h1 className="text-5xl md:text-7xl font-black mt-8 leading-tight">
-
-          Clean Trash Bins.
-
-          <br />
-
-          Healthier Homes.
-
-        </h1>
-
-        <p className="mt-8 text-xl text-slate-700 max-w-2xl">
-
-          We professionally sanitize residential and commercial trash bins
-
-          throughout Middle Tennessee using high-pressure hot water that kills
-
-          bacteria, removes odors, and leaves every bin smelling fresh.
-
-        </p>
-
-        <div className="flex flex-wrap gap-4 mt-10">
-
-          <a
-
-            href="#quote"
-
-            className="bg-red-600 hover:bg-red-700 px-8 py-4 rounded-lg font-bold"
-
-          >
-
-            Get Free Quote
-
-          </a>
-
-          <a
-
-            href="tel:9312130332"
-
-            className="border border-white px-8 py-4 rounded-lg font-bold"
-
-          >
-
-            Call (931) 213-0332
-
-          </a>
-
+        <div className="max-w-3xl">
+          <span className="inline-block bg-red-600 text-white px-4 py-2 rounded-full font-semibold mb-6">
+            Veteran Owned • Middle Tennessee
+          </span>
+          <h1 className="text-5xl md:text-7xl font-extrabold leading-tight">
+            Professional
+            <br />
+            Trash Bin Cleaning
+          </h1>
+          <p className="mt-8 text-xl text-slate-300 leading-8">
+            Eliminate odors, bacteria, grime, insects, and maggots with
+            commercial-grade hot water cleaning. Serving homeowners,
+            HOAs, apartments, and businesses across Middle Tennessee.
+          </p>
+          <div className="mt-10 flex flex-wrap gap-4">
+            <a
+              href="#quote"
+              className="bg-red-600 hover:bg-red-700 px-8 py-4 rounded-xl font-bold text-lg transition"
+            >
+              Get Free Quote
+            </a>
+            <a
+              href="tel:6155551234"
+              className="border-2 border-white px-8 py-4 rounded-xl font-bold text-lg hover:bg-white hover:text-slate-900 transition"
+            >
+              Call Now
+            </a>
+          </div>
+          <div className="mt-12 grid grid-cols-3 gap-8">
+            <div>
+              <h2 className="text-4xl font-bold text-red-500">
+                200°
+              </h2>
+              <p className="text-slate-300">
+                Hot Water Cleaning
+              </p>
+            </div>
+            <div>
+              <h2 className="text-4xl font-bold text-red-500">
+                100%
+              </h2>
+              <p className="text-slate-300">
+                Satisfaction
+              </p>
+            </div>
+            <div>
+              <h2 className="text-4xl font-bold text-red-500">
+                Veteran
+              </h2>
+              <p className="text-slate-300">
+                Owned
+              </p>
+            </div>
+          </div>
         </div>
-
-        <div className="grid grid-cols-3 gap-10 mt-20 text-center">
-
-          <div>
-
-            <h2 className="text-4xl font-black text-red-500">200°F</h2>
-
-            <p className="text-slate-700 mt-2">
-
-              Hot Water Cleaning
-
-            </p>
-
-          </div>
-
-          <div>
-
-            <h2 className="text-4xl font-black text-red-500">99.9%</h2>
-
-            <p className="text-slate-700 mt-2">
-
-              Bacteria Eliminated
-
-            </p>
-
-          </div>
-
-          <div>
-
-            <h2 className="text-4xl font-black text-red-500">100%</h2>
-
-            <p className="text-slate-700 mt-2">
-
-              Satisfaction Guaranteed
-
-            </p>
-
-          </div>
-
-        </div>
-
       </div>
-
     </section>
-
   );
-
 }

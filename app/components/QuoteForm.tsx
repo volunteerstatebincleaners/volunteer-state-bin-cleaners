@@ -2,17 +2,17 @@ export default function QuoteForm() {
   return (
     <section
       id="quote"
-      className="py-24 bg-slate-900 text-white"
+      className="bg-slate-900 py-24"
     >
       <div className="max-w-3xl mx-auto px-6">
         <div className="text-center mb-12">
           <span className="bg-red-600 px-4 py-2 rounded-full font-semibold">
             Free Quote
           </span>
-          <h2 className="text-5xl font-black mt-6">
+          <h2 className="text-5xl font-extrabold text-white">
             Request Your Free Quote
           </h2>
-          <p className="mt-6 text-slate-700">
+          <p className="text-slate-200 mt-5 text-xl">
             Fill out the form below and we'll contact you with a free,
             no-obligation estimate.
           </p>
@@ -21,22 +21,22 @@ export default function QuoteForm() {
           <input
             type="text"
             placeholder="Full Name"
-            className="w-full rounded-xl p-4 text-black"
+            className="w-full rounded-lg border border-slate-300 bg-white text-slate-900 p-4"
           />
           <input
             type="tel"
             placeholder="Phone Number"
-            className="w-full rounded-xl p-4 text-black"
+            className="w-full rounded-lg border border-slate-300 bg-white text-slate-900 p-4"
           />
           <input
             type="email"
             placeholder="Email Address"
-            className="w-full rounded-xl p-4 text-black"
+            className="w-full rounded-lg border border-slate-300 bg-white text-slate-900 p-4"
           />
           <input
             type="text"
             placeholder="City"
-            className="w-full rounded-xl p-4 text-black"
+            className="w-full rounded-lg border border-slate-300 bg-white text-slate-900 p-4"
           />
           <select
             className="w-full rounded-xl p-4 text-black"
@@ -53,7 +53,7 @@ export default function QuoteForm() {
             className="w-full rounded-xl p-4 text-black"
           />
           <button
-            className="w-full bg-red-600 hover:bg-red-700 rounded-xl py-5 text-xl font-bold"
+            className="w-full bg-red-600 hover:bg-red-700 text-white font-bold py-4 rounded-xl transition"
           >
             Request Free Quote
           </button>
@@ -62,4 +62,3 @@ export default function QuoteForm() {
     </section>
   );
 }
-
