@@ -17,7 +17,11 @@ export default function QuoteForm() {
             no-obligation estimate.
           </p>
         </div>
-        <form className="space-y-6">
+        <form 
+          action="https://formspree.io/f/xzdlaobe">
+          method="POST"
+          className="space-y-4"
+          
           <input
             type="text"
             placeholder="Full Name"
