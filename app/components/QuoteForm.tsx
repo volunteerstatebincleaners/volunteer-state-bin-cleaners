@@ -15,7 +15,7 @@ export default function QuoteForm() {
           </p>
         </div>
         <form
-          action="https://formspree.io/f/xdzlqobe"
+          action="https://formspree.io/f/xdzlaobe"
           method="POST"
           className="space-y-4"
         >
