@@ -2,8 +2,10 @@ import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import WhyChooseUs from "./components/WhyChooseUs";
 import HowItWorks from "./components/HowItWorks";
-import BeforeAfter from "./components/BeforeAfter";
 import Pricing from "./components/Pricing";
+import ServiceArea from "./components/ServiceArea";
+import FAQ from "./components/FAQ";
+import QuoteForm from "./components/QuoteForm";
 import Footer from "./components/Footer";
 
 export default function Home() {
@@ -12,17 +14,19 @@ export default function Home() {
       <Navbar />
 
       <main>
-
         <Hero />
 
         <WhyChooseUs />
 
         <HowItWorks />
 
-        <BeforeAfter />
-
         <Pricing />
 
+        <ServiceArea />
+
+        <FAQ />
+
+        <QuoteForm />
       </main>
 
       <Footer />
