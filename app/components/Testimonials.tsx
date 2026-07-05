@@ -1,36 +1,84 @@
-export default function Testimonials(){
-const reviews=[
-"Excellent service! My trash bins look brand new.",
-"Professional, friendly and always on time.",
-"Highly recommend Volunteer State Bin Cleaners."
-];
-return(
-<section className="bg-white py-24">
-<div className="max-w-6xl mx-auto px-6">
-<div className="text-center mb-16">
-<h2 className="text-5xl font-extrabold text-slate-900">
-Customer Reviews
-</h2>
-<p className="text-xl text-slate-700 mt-5">
-See why homeowners trust us.
-</p>
-</div>
-<div className="grid md:grid-cols-3 gap-8">
-{reviews.map((review,index)=>(
-<div
-key={index}
-className="bg-white border border-slate-200 rounded-2xl shadow-xl p-8"
->
-<div className="text-yellow-500 text-2xl mb-4">
-★★★★★
-</div>
-<p className="text-slate-700 text-lg leading-8">
-"{review}"
-</p>
-</div>
-))}
-</div>
-</div>
-</section>
-)
+import Link from "next/link";
+
+export default function Testimonials() {
+  return (
+    <section className="bg-slate-100 py-24">
+      <div className="max-w-7xl mx-auto px-6">
+
+        <div className="text-center mb-16">
+
+          <span className="bg-red-600 text-white px-4 py-2 rounded-full font-semibold">
+            Customer Satisfaction
+          </span>
+
+          <h2 className="text-5xl font-black text-slate-900 mt-6">
+            Building Our Reputation One Clean Bin at a Time
+          </h2>
+
+          <p className="text-slate-600 text-xl mt-5 max-w-3xl mx-auto">
+            Volunteer State Bin Cleaners is committed to delivering reliable,
+            professional service throughout Middle Tennessee.
+          </p>
+
+        </div>
+
+        <div className="grid md:grid-cols-3 gap-8">
+
+          <div className="bg-white rounded-2xl shadow-lg p-8 text-center">
+
+            <div className="text-5xl mb-5">⭐</div>
+
+            <h3 className="text-2xl font-bold">
+              Honest Service
+            </h3>
+
+            <p className="text-slate-600 mt-4">
+              We believe in earning every review through dependable service,
+              professionalism, and great results.
+            </p>
+
+          </div>
+
+          <div className="bg-white rounded-2xl shadow-lg p-8 text-center">
+
+            <div className="text-5xl mb-5">🏡</div>
+
+            <h3 className="text-2xl font-bold">
+              Local Company
+            </h3>
+
+            <p className="text-slate-600 mt-4">
+              Proudly serving homeowners, HOAs, apartment communities,
+              and businesses across Middle Tennessee.
+            </p>
+
+          </div>
+
+          <div className="bg-white rounded-2xl shadow-lg p-8 text-center">
+
+            <div className="text-5xl mb-5">💬</div>
+
+            <h3 className="text-2xl font-bold">
+              Your Review Matters
+            </h3>
+
+            <p className="text-slate-600 mt-4 mb-6">
+              As we grow, we look forward to sharing real customer
+              experiences right here.
+            </p>
+
+            <Link
+              href="/quote"
+              className="inline-block bg-red-600 hover:bg-red-700 text-white px-6 py-3 rounded-xl font-bold transition"
+            >
+              Become Our Next Customer
+            </Link>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+  );
 }

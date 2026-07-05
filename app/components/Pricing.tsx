@@ -1,95 +1,111 @@
+import Link from "next/link";
+
+const plans = [
+  {
+    title: "One-Time Cleaning",
+    price: "$25",
+    featured: false,
+    button: "Book Now",
+    features: [
+      "Deep Hot Water Cleaning",
+      "Sanitized & Deodorized",
+      "Odor Elimination",
+      "Perfect for First-Time Customers",
+    ],
+  },
+  {
+    title: "Monthly Service",
+    price: "$20",
+    featured: true,
+    button: "Book Now",
+    features: [
+      "Best Value",
+      "Priority Scheduling",
+      "Hot Water Cleaning Every Visit",
+      "Keeps Bins Fresh Year-Round",
+    ],
+  },
+  {
+    title: "Commercial",
+    price: "Custom",
+    featured: false,
+    button: "Get Free Quote",
+    features: [
+      "HOAs",
+      "Apartment Communities",
+      "Restaurants",
+      "Commercial Properties",
+    ],
+  },
+];
+
 export default function Pricing() {
-  const plans = [
-    {
-      title: "One-Time Cleaning",
-      price: "$25",
-      featured: false,
-      features: [
-        "Deep Hot Water Cleaning",
-        "Sanitized & Deodorized",
-        "Odor Removal",
-        "Great for First-Time Customers",
-      ],
-    },
-    {
-      title: "Monthly Service",
-      price: "$20",
-      featured: true,
-      features: [
-        "Best Value",
-        "Priority Scheduling",
-        "Hot Water Cleaning",
-        "Sanitized Every Visit",
-        "Keeps Bins Fresh Year Round",
-      ],
-    },
-    {
-      title: "Commercial",
-      price: "Quote",
-      featured: false,
-      features: [
-        "Apartments",
-        "HOAs",
-        "Restaurants",
-        "Dumpster Pads",
-        "Custom Service Plans",
-      ],
-    },
-  ];
   return (
-    <section id="pricing" className="py-24 bg-slate-100">
+    <section id="pricing" className="bg-slate-100 py-24">
       <div className="max-w-7xl mx-auto px-6">
+
         <div className="text-center mb-16">
-          <span className="uppercase tracking-widest text-red-600 font-bold">
-            Pricing
-          </span>
-          <h2 className="mt-4 text-5xl font-extrabold text-slate-900">
+          <span className="bg-red-600 text-white px-4 py-2 rounded-full font-semibold">
             Simple Pricing
+          </span>
+
+          <h2 className="text-5xl font-black text-slate-900 mt-6">
+            Affordable Plans
           </h2>
-          <p className="mt-5 text-xl text-slate-600 max-w-2xl mx-auto">
-            Affordable plans with no contracts and no hidden fees.
+
+          <p className="text-slate-600 text-xl mt-4">
+            Choose the service that fits your home or business.
           </p>
         </div>
-        <div className="grid gap-8 lg:grid-cols-3">
+
+        <div className="grid lg:grid-cols-3 gap-8">
+
           {plans.map((plan) => (
             <div
               key={plan.title}
-              className={`rounded-3xl bg-white shadow-xl border transition duration-300 hover:-translate-y-2 hover:shadow-2xl overflow-hidden ${
+              className={`rounded-3xl p-8 shadow-xl ${
                 plan.featured
-                  ? "border-red-600 ring-4 ring-red-100"
-                  : "border-slate-200"
+                  ? "bg-red-600 text-white scale-105"
+                  : "bg-white"
               }`}
             >
               {plan.featured && (
-                <div className="bg-red-600 text-white text-center py-3 font-bold">
+                <div className="inline-block bg-white text-red-600 px-4 py-2 rounded-full font-bold mb-6">
                   MOST POPULAR
                 </div>
               )}
-              <div className="p-10">
-                <h3 className="text-3xl font-bold text-slate-900">
-                  {plan.title}
-                </h3>
-                <div className="mt-6 text-5xl font-extrabold text-red-600">
-                  {plan.price}
-                </div>
-                <div className="mt-8 space-y-4">
-                  {plan.features.map((feature) => (
-                    <div
-                      key={feature}
-                      className="flex items-center gap-3 text-slate-700"
-                    >
-                      <span className="text-green-600 font-bold">✓</span>
-                      {feature}
-                    </div>
-                  ))}
-                </div>
-                <button className="mt-10 w-full rounded-xl bg-red-600 hover:bg-red-700 text-white py-4 font-bold text-lg transition">
-                  Get Free Quote
-                </button>
+
+              <h3 className="text-3xl font-bold">
+                {plan.title}
+              </h3>
+
+              <div className="text-5xl font-black mt-6">
+                {plan.price}
               </div>
+
+              <ul className="space-y-4 mt-8">
+                {plan.features.map((feature) => (
+                  <li key={feature}>
+                    ✓ {feature}
+                  </li>
+                ))}
+              </ul>
+
+              <Link
+                href="/quote"
+                className={`block mt-10 text-center rounded-xl py-4 font-bold transition ${
+                  plan.featured
+                    ? "bg-white text-red-600 hover:bg-slate-200"
+                    : "bg-red-600 text-white hover:bg-red-700"
+                }`}
+              >
+                {plan.button}
+              </Link>
             </div>
           ))}
+
         </div>
+
       </div>
     </section>
   );
