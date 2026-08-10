@@ -8,7 +8,6 @@ export default function Footer() {
       {/* Final Call To Action */}
 
       <section className="bg-red-600">
-
         <div className="max-w-7xl mx-auto px-6 py-16 text-center">
 
           <h2 className="text-4xl md:text-5xl font-black">
@@ -39,7 +38,6 @@ export default function Footer() {
           </div>
 
         </div>
-
       </section>
 
       {/* Main Footer */}
@@ -54,7 +52,7 @@ export default function Footer() {
 
             <Image
               src="/logo.png"
-              alt="Volunteer State Bin Cleaners"
+              alt="Volunteer State Bin Cleaners, LLC"
               width={90}
               height={90}
             />
@@ -64,7 +62,7 @@ export default function Footer() {
             </h3>
 
             <p className="text-red-500 font-bold">
-              Bin Cleaners
+              Bin Cleaners, LLC
             </p>
 
             <p className="text-slate-400 mt-5 leading-7">
@@ -89,17 +87,11 @@ export default function Footer() {
             <ul className="space-y-3 text-slate-400">
 
               <li>Residential Bin Cleaning</li>
-
               <li>Commercial Bin Cleaning</li>
-
               <li>Driveway Pressure Washing</li>
-
               <li>Sidewalk Pressure Washing</li>
-
               <li>Crate & Tote Cleaning</li>
-
               <li>Dumpster Pad Cleaning</li>
-
               <li>HOA & Apartment Services</li>
 
             </ul>
@@ -184,6 +176,18 @@ export default function Footer() {
               <div>
 
                 <p className="text-slate-500 text-sm uppercase tracking-wide">
+                  Business Name
+                </p>
+
+                <p className="text-slate-300">
+                  Volunteer State Bin Cleaners, LLC
+                </p>
+
+              </div>
+
+              <div>
+
+                <p className="text-slate-500 text-sm uppercase tracking-wide">
                   Phone
                 </p>
 
@@ -234,7 +238,7 @@ export default function Footer() {
         <div className="border-t border-slate-800 mt-14 pt-8 flex flex-col md:flex-row justify-between gap-4 text-sm text-slate-500">
 
           <p>
-            © {new Date().getFullYear()} Volunteer State Bin Cleaners.
+            © {new Date().getFullYear()} Volunteer State Bin Cleaners, LLC.
             All Rights Reserved.
           </p>
 
