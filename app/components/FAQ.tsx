@@ -3,22 +3,37 @@ export default function FAQ() {
     {
       question: "How often should my trash bins be cleaned?",
       answer:
-        "Most homeowners choose monthly service to keep odors, bacteria, and insects under control. We also offer one-time cleanings and commercial schedules.",
+        "Many homeowners choose monthly service to help control odors, buildup, and unwanted pests. We also offer one-time cleanings and customized recurring schedules.",
     },
     {
       question: "Do I need to be home during service?",
       answer:
-        "No. As long as your trash bins are curbside or otherwise accessible, we'll complete the service and leave your bins clean, sanitized, and deodorized.",
+        "No. As long as your bins or cleaning area are accessible, you generally do not need to be home. We'll complete the service and leave the area clean.",
     },
     {
-      question: "Do you use eco-friendly cleaning methods?",
+      question: "Do you provide pressure washing?",
       answer:
-        "Yes. We use high-pressure hot water and environmentally responsible cleaning products that are safe for your family, pets, and the environment.",
+        "Yes. We provide driveway and sidewalk pressure washing for residential and commercial properties. We can also discuss larger exterior cleaning projects.",
     },
     {
-      question: "Do you clean commercial dumpsters?",
+      question: "Do you clean commercial bins and dumpster areas?",
       answer:
-        "Yes. We service HOAs, apartment communities, restaurants, offices, and other commercial properties. Contact us for a custom quote.",
+        "Yes. We work with businesses, restaurants, apartment communities, HOAs, property managers, and other commercial properties. Contact us for a customized quote.",
+    },
+    {
+      question: "Do you clean crates and totes?",
+      answer:
+        "Yes. We offer cleaning for reusable crates, plastic totes, shipping containers, industrial bins, and other commercial or agricultural containers.",
+    },
+    {
+      question: "Can you use my outdoor water supply?",
+      answer:
+        "When an outdoor water connection is available, we may use the customer's water supply when appropriate. Let us know about water availability when requesting your quote.",
+    },
+    {
+      question: "Does the condition of my bin affect the price?",
+      answer:
+        "It can. Pricing may vary depending on the size, condition, accessibility, and severity of cleaning required. Final pricing will be confirmed before service begins.",
     },
     {
       question: "What areas do you serve?",
@@ -33,34 +48,37 @@ export default function FAQ() {
 
         <div className="text-center mb-16">
 
-          <span className="bg-red-600 text-white px-4 py-2 rounded-full font-semibold">
+          <span className="inline-block bg-red-600 text-white px-5 py-2 rounded-full font-semibold">
             Frequently Asked Questions
           </span>
 
-          <h2 className="text-5xl font-black text-slate-900 mt-6">
-            Have Questions?
+          <h2 className="text-4xl lg:text-5xl font-black text-slate-900 mt-6">
+            Questions? We've Got Answers.
           </h2>
 
-          <p className="text-slate-600 text-xl mt-5">
-            Here are answers to some of the most common questions we receive.
+          <p className="text-lg text-slate-600 mt-5 max-w-3xl mx-auto">
+            Learn more about our bin cleaning, pressure washing, commercial
+            services, pricing, and service area.
           </p>
 
         </div>
 
-        <div className="space-y-6">
+        <div className="space-y-5">
 
           {faqs.map((faq) => (
             <div
               key={faq.question}
-              className="bg-slate-100 rounded-2xl p-8 shadow"
+              className="bg-slate-50 border border-slate-200 rounded-2xl p-7"
             >
-              <h3 className="text-2xl font-bold text-slate-900">
+
+              <h3 className="text-xl font-bold text-slate-900">
                 {faq.question}
               </h3>
 
-              <p className="text-slate-600 mt-4 leading-7">
+              <p className="text-slate-600 mt-3 leading-7">
                 {faq.answer}
               </p>
+
             </div>
           ))}
 

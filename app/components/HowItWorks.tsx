@@ -2,58 +2,62 @@ export default function HowItWorks() {
   const steps = [
     {
       number: "1",
-      title: "Book Your Cleaning",
+      icon: "📋",
+      title: "Request a Free Quote",
       description:
-        "Choose a one-time cleaning or recurring monthly service by requesting a free quote online.",
-      icon: "📅",
+        "Tell us what you need cleaned, where you're located, and any details that will help us understand your project.",
     },
     {
       number: "2",
-      title: "We Come To You",
+      icon: "📅",
+      title: "Schedule Your Service",
       description:
-        "Our specialized trailer arrives at your home and professionally cleans, sanitizes, and deodorizes your trash bins.",
-      icon: "🚛",
+        "We'll review your request, confirm pricing, and work with you to find a convenient service date.",
     },
     {
       number: "3",
-      title: "Enjoy Fresh, Clean Bins",
-      description:
-        "No more odors, bacteria, maggots, or dirty trash cans. Just clean, sanitized bins ready to use.",
       icon: "✨",
+      title: "We Clean. You Enjoy.",
+      description:
+        "Our professional equipment gets to work cleaning your bins, concrete surfaces, containers, or other approved areas.",
     },
   ];
 
   return (
-    <section className="bg-slate-100 py-24">
-
+    <section className="bg-white py-24">
       <div className="max-w-7xl mx-auto px-6">
 
         <div className="text-center mb-16">
 
-          <h2 className="text-5xl font-black text-slate-900">
+          <span className="inline-block bg-red-600 text-white px-5 py-2 rounded-full font-semibold">
+            Simple Process
+          </span>
+
+          <h2 className="text-4xl lg:text-5xl font-black text-slate-900 mt-6">
             How It Works
           </h2>
 
-          <p className="text-xl text-slate-600 mt-5 max-w-3xl mx-auto">
-            Keeping your trash bins clean has never been easier.
+          <p className="text-lg text-slate-600 max-w-3xl mx-auto mt-5 leading-8">
+            Whether you need a single bin cleaned or a larger commercial
+            cleaning project, getting started is simple.
           </p>
 
         </div>
 
-        <div className="grid md:grid-cols-3 gap-10">
+        <div className="grid md:grid-cols-3 gap-8">
 
           {steps.map((step) => (
             <div
               key={step.number}
-              className="bg-white rounded-2xl shadow-lg p-10 text-center hover:shadow-xl transition"
+              className="relative bg-slate-50 rounded-3xl p-8 text-center shadow-sm hover:shadow-lg transition"
             >
 
-              <div className="text-6xl mb-6">
-                {step.icon}
+              <div className="absolute top-5 right-5 bg-red-600 text-white w-10 h-10 rounded-full flex items-center justify-center font-bold">
+                {step.number}
               </div>
 
-              <div className="w-14 h-14 bg-red-600 text-white rounded-full flex items-center justify-center mx-auto text-2xl font-bold mb-6">
-                {step.number}
+              <div className="text-5xl mb-6">
+                {step.icon}
               </div>
 
               <h3 className="text-2xl font-bold text-slate-900 mb-4">
@@ -70,7 +74,6 @@ export default function HowItWorks() {
         </div>
 
       </div>
-
     </section>
   );
 }

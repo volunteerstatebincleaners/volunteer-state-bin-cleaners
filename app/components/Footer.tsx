@@ -5,28 +5,28 @@ export default function Footer() {
   return (
     <footer className="bg-slate-950 text-white">
 
-      {/* Call to Action */}
+      {/* Final Call To Action */}
 
       <section className="bg-red-600">
 
         <div className="max-w-7xl mx-auto px-6 py-16 text-center">
 
           <h2 className="text-4xl md:text-5xl font-black">
-            Ready for Cleaner Trash Bins?
+            Ready to Get Your Property Clean?
           </h2>
 
-          <p className="text-xl mt-5 opacity-95 max-w-3xl mx-auto">
-            Join homeowners, HOAs, apartment communities, and businesses
-            across Middle Tennessee who trust Volunteer State Bin Cleaners.
+          <p className="text-lg md:text-xl mt-5 max-w-3xl mx-auto">
+            From trash bin cleaning to pressure washing and commercial
+            cleaning projects, we're ready to help.
           </p>
 
           <div className="flex flex-wrap justify-center gap-4 mt-10">
 
             <Link
               href="/quote"
-              className="bg-white text-red-600 hover:bg-slate-200 px-8 py-4 rounded-xl font-bold transition"
+              className="bg-white text-red-600 hover:bg-slate-100 px-8 py-4 rounded-xl font-bold transition"
             >
-              Book Now
+              Request a Free Quote
             </Link>
 
             <a
@@ -42,11 +42,11 @@ export default function Footer() {
 
       </section>
 
-      {/* Footer */}
+      {/* Main Footer */}
 
       <div className="max-w-7xl mx-auto px-6 py-16">
 
-        <div className="grid md:grid-cols-4 gap-10">
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-12">
 
           {/* Company */}
 
@@ -55,11 +55,11 @@ export default function Footer() {
             <Image
               src="/logo.png"
               alt="Volunteer State Bin Cleaners"
-              width={70}
-              height={70}
+              width={90}
+              height={90}
             />
 
-            <h3 className="text-2xl font-bold mt-5">
+            <h3 className="text-2xl font-black mt-5">
               Volunteer State
             </h3>
 
@@ -67,11 +67,42 @@ export default function Footer() {
               Bin Cleaners
             </p>
 
-            <p className="text-slate-400 mt-5">
-              Professional trash bin cleaning for homeowners,
-              businesses, apartment communities, and HOAs throughout
-              Middle Tennessee.
+            <p className="text-slate-400 mt-5 leading-7">
+              Professional Bin Cleaning & Exterior Washing
+              throughout Middle Tennessee.
             </p>
+
+            <p className="text-slate-400 mt-5">
+              🇺🇸 Veteran-Owned & Operated
+            </p>
+
+          </div>
+
+          {/* Services */}
+
+          <div>
+
+            <h3 className="text-xl font-bold mb-5">
+              Our Services
+            </h3>
+
+            <ul className="space-y-3 text-slate-400">
+
+              <li>Residential Bin Cleaning</li>
+
+              <li>Commercial Bin Cleaning</li>
+
+              <li>Driveway Pressure Washing</li>
+
+              <li>Sidewalk Pressure Washing</li>
+
+              <li>Crate & Tote Cleaning</li>
+
+              <li>Dumpster Pad Cleaning</li>
+
+              <li>HOA & Apartment Services</li>
+
+            </ul>
 
           </div>
 
@@ -83,36 +114,58 @@ export default function Footer() {
               Quick Links
             </h3>
 
-            <ul className="space-y-3 text-slate-300">
+            <ul className="space-y-3 text-slate-400">
 
-              <li><Link href="/">Home</Link></li>
+              <li>
+                <Link href="/" className="hover:text-white transition">
+                  Home
+                </Link>
+              </li>
 
-              <li><a href="/#pricing">Pricing</a></li>
+              <li>
+                <a
+                  href="/#services"
+                  className="hover:text-white transition"
+                >
+                  Services
+                </a>
+              </li>
 
-              <li><a href="/#faq">FAQ</a></li>
+              <li>
+                <a
+                  href="/#pricing"
+                  className="hover:text-white transition"
+                >
+                  Pricing
+                </a>
+              </li>
 
-              <li><Link href="/quote">Book Now</Link></li>
+              <li>
+                <a
+                  href="/#service-area"
+                  className="hover:text-white transition"
+                >
+                  Service Area
+                </a>
+              </li>
 
-            </ul>
+              <li>
+                <a
+                  href="/#faq"
+                  className="hover:text-white transition"
+                >
+                  FAQ
+                </a>
+              </li>
 
-          </div>
-
-          {/* Service Areas */}
-
-          <div>
-
-            <h3 className="text-xl font-bold mb-5">
-              Service Areas
-            </h3>
-
-            <ul className="space-y-3 text-slate-300">
-
-              <li>Nashville</li>
-              <li>Franklin</li>
-              <li>Murfreesboro</li>
-              <li>Gallatin</li>
-              <li>Mt. Juliet</li>
-              <li>Lebanon</li>
+              <li>
+                <Link
+                  href="/quote"
+                  className="hover:text-white transition"
+                >
+                  Request a Quote
+                </Link>
+              </li>
 
             </ul>
 
@@ -126,26 +179,49 @@ export default function Footer() {
               Contact Us
             </h3>
 
-            <div className="space-y-4">
+            <div className="space-y-5">
 
-              <a
-                href="tel:9312130332"
-                className="block hover:text-red-500"
-              >
-                📞 (931) 213-0332
-              </a>
+              <div>
 
-              <a
-                href="mailto:info@volunteerstatebincleaners.com"
-                className="block hover:text-red-500"
-              >
-                📧 info@volunteerstatebincleaners.com
-              </a>
+                <p className="text-slate-500 text-sm uppercase tracking-wide">
+                  Phone
+                </p>
 
-              <p className="text-slate-400">
-                Veteran-Owned & Proudly Serving
-                Middle Tennessee
-              </p>
+                <a
+                  href="tel:9312130332"
+                  className="text-lg font-semibold hover:text-red-500 transition"
+                >
+                  (931) 213-0332
+                </a>
+
+              </div>
+
+              <div>
+
+                <p className="text-slate-500 text-sm uppercase tracking-wide">
+                  Email
+                </p>
+
+                <a
+                  href="mailto:info@volunteerstatebincleaners.com"
+                  className="break-all hover:text-red-500 transition"
+                >
+                  info@volunteerstatebincleaners.com
+                </a>
+
+              </div>
+
+              <div>
+
+                <p className="text-slate-500 text-sm uppercase tracking-wide">
+                  Service Area
+                </p>
+
+                <p className="text-slate-300">
+                  Middle Tennessee
+                </p>
+
+              </div>
 
             </div>
 
@@ -153,10 +229,18 @@ export default function Footer() {
 
         </div>
 
-        <div className="border-t border-slate-800 mt-14 pt-8 text-center text-slate-500">
+        {/* Bottom */}
 
-          © {new Date().getFullYear()} Volunteer State Bin Cleaners.
-          All Rights Reserved.
+        <div className="border-t border-slate-800 mt-14 pt-8 flex flex-col md:flex-row justify-between gap-4 text-sm text-slate-500">
+
+          <p>
+            © {new Date().getFullYear()} Volunteer State Bin Cleaners.
+            All Rights Reserved.
+          </p>
+
+          <p>
+            Professional Bin Cleaning & Exterior Washing
+          </p>
 
         </div>
 
