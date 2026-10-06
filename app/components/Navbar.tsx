@@ -4,9 +4,9 @@ import Image from "next/image";
 export default function Navbar() {
   return (
     <header className="sticky top-0 z-50 bg-white shadow-md">
-      <div className="max-w-7xl mx-auto flex items-center justify-between px-6 py-4">
+      <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
 
-        {/* Logo */}
+        {/* Logo / Business Name */}
         <Link href="/" className="flex items-center gap-3">
           <Image
             src="/logo.png"
@@ -27,39 +27,42 @@ export default function Navbar() {
           </div>
         </Link>
 
-        {/* Navigation */}
+        {/* Desktop Navigation */}
         <nav className="hidden md:flex items-center gap-8">
+
           <Link
             href="/"
-            className="font-semibold hover:text-red-600 transition"
+            className="font-semibold text-slate-900 hover:text-red-600 transition"
           >
             Home
           </Link>
 
-          <a
-            href="#pricing"
-            className="font-semibold hover:text-red-600 transition"
+          <Link
+            href="/#pricing"
+            className="font-semibold text-slate-900 hover:text-red-600 transition"
           >
             Pricing
-          </a>
+          </Link>
 
-          <a
-            href="#faq"
-            className="font-semibold hover:text-red-600 transition"
+          <Link
+            href="/#faq"
+            className="font-semibold text-slate-900 hover:text-red-600 transition"
           >
             FAQ
-          </a>
+          </Link>
 
-          <a
-            href="#service-area"
-            className="font-semibold hover:text-red-600 transition"
+          <Link
+            href="/#service-area"
+            className="font-semibold text-slate-900 hover:text-red-600 transition"
           >
             Service Areas
-          </a>
+          </Link>
+
         </nav>
 
-        {/* Buttons */}
+        {/* Action Buttons */}
         <div className="flex items-center gap-3">
+
           <a
             href="tel:9312130332"
             className="hidden md:block border-2 border-red-600 text-red-600 px-5 py-2 rounded-xl font-semibold hover:bg-red-600 hover:text-white transition"
@@ -73,8 +76,8 @@ export default function Navbar() {
           >
             Book Now
           </Link>
-        </div>
 
+        </div>
       </div>
     </header>
   );
