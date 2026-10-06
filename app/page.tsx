@@ -14,29 +14,29 @@ export default function Home() {
       <Navbar />
 
       <main>
-        {/* Hero */}
+        {/* Main Hero Section */}
         <Hero />
 
-        {/* Why Choose Us */}
+        {/* Why Choose Volunteer State Cleaners */}
         <WhyChooseUs />
 
-        {/* Services */}
+        {/* Cleaning & Exterior Services */}
         <ServicesOverview />
 
-        {/* How It Works */}
+        {/* How Our Services Work */}
         <HowItWorks />
 
         {/* Pricing & Service Options */}
         <Pricing />
 
-        {/* Service Area */}
+        {/* Middle Tennessee Service Areas */}
         <ServiceArea />
 
         {/* Frequently Asked Questions */}
         <FAQ />
       </main>
 
-      {/* Footer / Final Call To Action */}
+      {/* Footer & Final Call To Action */}
       <Footer />
     </>
   );
