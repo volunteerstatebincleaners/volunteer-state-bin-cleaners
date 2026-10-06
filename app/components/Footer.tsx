@@ -1,11 +1,10 @@
 import Link from "next/link";
-import Image from "next/image";
 
 export default function Footer() {
   return (
     <footer className="bg-slate-950 text-white">
 
-      {/* Final Call To Action */}
+      {/* Call To Action */}
       <section className="bg-red-600">
         <div className="max-w-7xl mx-auto px-6 py-16 text-center">
 
@@ -15,7 +14,7 @@ export default function Footer() {
 
           <p className="text-lg md:text-xl mt-5 max-w-3xl mx-auto text-white">
             From trash bin cleaning to pressure washing and commercial
-            exterior cleaning, we're ready to help.
+            exterior cleaning, Volunteer State Cleaners is ready to help.
           </p>
 
           <div className="flex flex-wrap justify-center gap-4 mt-8">
@@ -24,7 +23,7 @@ export default function Footer() {
               href="/quote"
               className="bg-white text-red-600 hover:bg-slate-100 px-8 py-4 rounded-xl font-bold transition"
             >
-              Request a Free Quote
+              Book Now
             </Link>
 
             <a
@@ -39,125 +38,89 @@ export default function Footer() {
       </section>
 
       {/* Main Footer */}
-      <div className="max-w-7xl mx-auto px-6 py-16">
+      <div className="max-w-7xl mx-auto px-6 py-14">
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
 
-          {/* Company */}
+          {/* Business */}
           <div>
-
-            <Image
-              src="/logo.png"
-              alt="Volunteer State Cleaners"
-              width={100}
-              height={100}
-              className="mb-5"
-            />
-
-            <h3 className="text-2xl font-bold text-white">
+            <h3 className="text-2xl font-black">
               Volunteer State
             </h3>
 
-            <p className="text-red-500 font-bold mt-1">
-              Cleaners, LLC
+            <p className="text-red-600 font-bold text-lg">
+              Cleaners
             </p>
 
-            <p className="text-slate-400 mt-5 leading-7">
-              Professional Bin Cleaning & Exterior Washing
-              throughout Middle Tennessee.
+            <p className="text-slate-300 mt-5 leading-relaxed">
+              Professional bin cleaning, pressure washing, and exterior
+              cleaning services proudly serving Middle Tennessee.
             </p>
-
-            <p className="text-slate-400 mt-5">
-              Proudly serving residential, commercial,
-              HOA, apartment, and property management customers.
-            </p>
-
           </div>
 
           {/* Services */}
           <div>
-
             <h3 className="text-xl font-bold mb-5">
-              Our Services
+              Services
             </h3>
 
-            <ul className="space-y-3 text-slate-400">
+            <ul className="space-y-3 text-slate-300">
 
               <li>
-                <a
+                <Link
                   href="/#services"
                   className="hover:text-white transition"
                 >
-                  Residential Bin Cleaning
-                </a>
+                  Trash Bin Cleaning
+                </Link>
               </li>
 
               <li>
-                <a
-                  href="/#services"
-                  className="hover:text-white transition"
-                >
-                  Commercial Bin Cleaning
-                </a>
-              </li>
-
-              <li>
-                <a
+                <Link
                   href="/#services"
                   className="hover:text-white transition"
                 >
                   Dumpster Cleaning
-                </a>
+                </Link>
               </li>
 
               <li>
-                <a
+                <Link
                   href="/#services"
                   className="hover:text-white transition"
                 >
-                  Crate & Tote Cleaning
-                </a>
+                  Pressure Washing
+                </Link>
               </li>
 
               <li>
-                <a
+                <Link
                   href="/#services"
                   className="hover:text-white transition"
                 >
-                  Driveway Pressure Washing
-                </a>
+                  Exterior Cleaning
+                </Link>
               </li>
 
               <li>
-                <a
+                <Link
                   href="/#services"
                   className="hover:text-white transition"
                 >
-                  Sidewalk Pressure Washing
-                </a>
-              </li>
-
-              <li>
-                <a
-                  href="/#services"
-                  className="hover:text-white transition"
-                >
-                  HOA & Apartment Services
-                </a>
+                  Commercial Cleaning
+                </Link>
               </li>
 
             </ul>
-
           </div>
 
           {/* Quick Links */}
           <div>
-
             <h3 className="text-xl font-bold mb-5">
               Quick Links
             </h3>
 
-            <ul className="space-y-3 text-slate-400">
+            <ul className="space-y-3 text-slate-300">
 
               <li>
                 <Link
@@ -169,39 +132,30 @@ export default function Footer() {
               </li>
 
               <li>
-                <a
-                  href="/#services"
-                  className="hover:text-white transition"
-                >
-                  Services
-                </a>
-              </li>
-
-              <li>
-                <a
+                <Link
                   href="/#pricing"
                   className="hover:text-white transition"
                 >
                   Pricing
-                </a>
+                </Link>
               </li>
 
               <li>
-                <a
-                  href="/#service-area"
-                  className="hover:text-white transition"
-                >
-                  Service Area
-                </a>
-              </li>
-
-              <li>
-                <a
+                <Link
                   href="/#faq"
                   className="hover:text-white transition"
                 >
                   FAQ
-                </a>
+                </Link>
+              </li>
+
+              <li>
+                <Link
+                  href="/#service-area"
+                  className="hover:text-white transition"
+                >
+                  Service Areas
+                </Link>
               </li>
 
               <li>
@@ -209,95 +163,69 @@ export default function Footer() {
                   href="/quote"
                   className="hover:text-white transition"
                 >
-                  Request a Quote
+                  Book Now
                 </Link>
               </li>
 
             </ul>
-
           </div>
 
           {/* Contact */}
           <div>
-
             <h3 className="text-xl font-bold mb-5">
               Contact Us
             </h3>
 
-            <div className="space-y-6">
+            <div className="space-y-4 text-slate-300">
 
-              {/* Business Name */}
-              <div>
-                <p className="text-slate-500 text-sm uppercase tracking-wide">
-                  Business Name
-                </p>
+              <p>
+                Proudly Serving Middle Tennessee
+              </p>
 
-                <p className="text-slate-300 mt-1">
-                  Volunteer State Cleaners, LLC
-                </p>
-              </div>
+              <a
+                href="tel:9312130332"
+                className="block hover:text-white transition"
+              >
+                (931) 213-0332
+              </a>
 
-              {/* Phone */}
-              <div>
-                <p className="text-slate-500 text-sm uppercase tracking-wide">
-                  Phone
-                </p>
+              <a
+                href="mailto:info@volunteerstatecleaners.com"
+                className="block hover:text-white transition break-words"
+              >
+                info@volunteerstatecleaners.com
+              </a>
 
-                <a
-                  href="tel:9312130332"
-                  className="text-lg font-semibold hover:text-red-500 transition"
-                >
-                  (931) 213-0332
-                </a>
-              </div>
-
-              {/* Email */}
-              <div>
-                <p className="text-slate-500 text-sm uppercase tracking-wide">
-                  Email
-                </p>
-
-                <a
-                  href="mailto:info@volunteerstatecleaners.com"
-                  className="text-slate-300 hover:text-red-500 transition break-all"
-                >
-                  info@volunteerstatecleaners.com
-                </a>
-              </div>
-
-              {/* Service Area */}
-              <div>
-                <p className="text-slate-500 text-sm uppercase tracking-wide">
-                  Service Area
-                </p>
-
-                <p className="text-slate-300 mt-1">
-                  Middle Tennessee
-                </p>
-              </div>
+              <Link
+                href="/quote"
+                className="inline-block bg-red-600 hover:bg-red-700 text-white px-6 py-3 rounded-xl font-bold transition"
+              >
+                Request a Quote
+              </Link>
 
             </div>
+          </div>
+
+        </div>
+
+        {/* Bottom Bar */}
+        <div className="border-t border-slate-800 mt-12 pt-8">
+
+          <div className="flex flex-col md:flex-row items-center justify-between gap-4 text-sm text-slate-400">
+
+            <p>
+              © {new Date().getFullYear()} Volunteer State Cleaners. All rights reserved.
+            </p>
+
+            <p>
+              Proudly Serving Middle Tennessee
+            </p>
 
           </div>
 
         </div>
 
-        {/* Bottom Footer */}
-        <div className="border-t border-slate-800 mt-14 pt-8 flex flex-col md:flex-row justify-between gap-4 text-sm text-slate-500">
-
-          <p>
-            © {new Date().getFullYear()} Volunteer State Cleaners, LLC.
-            All Rights Reserved.
-          </p>
-
-          <p>
-            Professional Bin Cleaning & Exterior Washing
-          </p>
-
-        </div>
-
       </div>
-
     </footer>
   );
 }
