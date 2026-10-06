@@ -2,28 +2,68 @@ import "./globals.css";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title:
-    "Volunteer State Cleaners | Bin Cleaning & Exterior Cleaning in Middle Tennessee",
+  metadataBase: new URL("https://volunteerstatecleaners.com"),
+
+  title: {
+    default: "Volunteer State Cleaners | Middle Tennessee",
+    template: "%s | Volunteer State Cleaners",
+  },
+
   description:
-    "Professional bin cleaning, pressure washing, and exterior cleaning for homes, HOAs, apartments, and businesses throughout Middle Tennessee.",
+    "Volunteer State Cleaners provides professional trash bin cleaning, pressure washing, and exterior cleaning for homes, HOAs, apartments, and businesses throughout Middle Tennessee.",
+
   keywords: [
     "Volunteer State Cleaners",
-    "trash bin cleaning",
-    "garbage can cleaning",
     "bin cleaning",
+    "trash bin cleaning",
     "trash can cleaning",
+    "garbage can cleaning",
     "pressure washing",
     "exterior cleaning",
+    "commercial pressure washing",
+    "residential pressure washing",
+    "HOA bin cleaning",
+    "dumpster cleaning",
+    "sidewalk pressure washing",
+    "driveway pressure washing",
     "Middle Tennessee",
     "Nashville",
-    "Mt Juliet",
-    "Lebanon",
     "Murfreesboro",
     "Franklin",
     "Hendersonville",
     "Gallatin",
-    "HOA bin cleaning",
+    "Mt Juliet",
+    "Lebanon",
   ],
+
+  openGraph: {
+    title: "Volunteer State Cleaners | Middle Tennessee",
+    description:
+      "Professional bin cleaning, pressure washing, and exterior cleaning throughout Middle Tennessee.",
+    url: "https://volunteerstatecleaners.com",
+    siteName: "Volunteer State Cleaners",
+    locale: "en_US",
+    type: "website",
+  },
+
+  twitter: {
+    card: "summary_large_image",
+    title: "Volunteer State Cleaners | Middle Tennessee",
+    description:
+      "Professional bin cleaning, pressure washing, and exterior cleaning throughout Middle Tennessee.",
+  },
+
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+      "max-video-preview": -1,
+    },
+  },
 };
 
 export default function RootLayout({
