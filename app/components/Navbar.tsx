@@ -8,33 +8,27 @@ export default function Navbar() {
 
         {/* Logo */}
         <Link href="/" className="flex items-center gap-3">
-
           <Image
             src="/logo.png"
-            alt="Volunteer State Bin Cleaners"
+            alt="Volunteer State Cleaners"
             width={55}
             height={55}
             priority
           />
 
           <div>
-
             <h1 className="text-xl font-extrabold text-slate-900 leading-none">
               Volunteer State
             </h1>
 
             <p className="text-red-600 font-bold text-sm">
-              Bin Cleaners
+              Cleaners
             </p>
-
           </div>
-
         </Link>
 
         {/* Navigation */}
-
         <nav className="hidden md:flex items-center gap-8">
-
           <Link
             href="/"
             className="font-semibold hover:text-red-600 transition"
@@ -43,35 +37,32 @@ export default function Navbar() {
           </Link>
 
           <a
-            href="/#pricing"
+            href="#pricing"
             className="font-semibold hover:text-red-600 transition"
           >
             Pricing
           </a>
 
           <a
-            href="/#faq"
+            href="#faq"
             className="font-semibold hover:text-red-600 transition"
           >
             FAQ
           </a>
 
           <a
-            href="/#service-area"
+            href="#service-area"
             className="font-semibold hover:text-red-600 transition"
           >
             Service Areas
           </a>
-
         </nav>
 
         {/* Buttons */}
-
         <div className="flex items-center gap-3">
-
           <a
             href="tel:9312130332"
-            className="hidden md:block border-2 border-red-600 text-red-600 hover:bg-red-600 hover:text-white px-5 py-2 rounded-xl font-bold transition"
+            className="hidden md:block border-2 border-red-600 text-red-600 px-5 py-2 rounded-xl font-semibold hover:bg-red-600 hover:text-white transition"
           >
             Call Now
           </a>
@@ -82,7 +73,6 @@ export default function Navbar() {
           >
             Book Now
           </Link>
-
         </div>
 
       </div>
