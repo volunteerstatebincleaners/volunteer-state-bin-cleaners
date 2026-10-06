@@ -46,109 +46,104 @@ export default function Footer() {
           {/* Company */}
           <div>
 
-            <Link
-              href="/"
-              className="inline-flex items-center gap-3"
-            >
-              <Image
-                src="/logo.png"
-                alt="Volunteer State Cleaners, LLC"
-                width={90}
-                height={90}
-              />
+            <Image
+              src="/logo.png"
+              alt="Volunteer State Cleaners"
+              width={100}
+              height={100}
+              className="mb-5"
+            />
 
-              <div>
-                <h3 className="text-2xl font-black text-white">
-                  Volunteer State
-                </h3>
+            <h3 className="text-2xl font-bold text-white">
+              Volunteer State
+            </h3>
 
-                <p className="text-red-500 font-bold">
-                  Cleaners, LLC
-                </p>
-              </div>
-            </Link>
+            <p className="text-red-500 font-bold mt-1">
+              Cleaners, LLC
+            </p>
 
-            <p className="text-slate-400 mt-6 leading-7">
+            <p className="text-slate-400 mt-5 leading-7">
               Professional Bin Cleaning & Exterior Washing
               throughout Middle Tennessee.
             </p>
 
             <p className="text-slate-400 mt-5">
-              Veteran-owned & operated.
+              Proudly serving residential, commercial,
+              HOA, apartment, and property management customers.
             </p>
 
           </div>
 
-          {/* Our Services */}
+          {/* Services */}
           <div>
 
-            <h3 className="text-xl font-bold mb-6">
+            <h3 className="text-xl font-bold mb-5">
               Our Services
             </h3>
 
             <ul className="space-y-3 text-slate-400">
 
               <li>
-                <Link
+                <a
                   href="/#services"
                   className="hover:text-white transition"
                 >
                   Residential Bin Cleaning
-                </Link>
+                </a>
               </li>
 
               <li>
-                <Link
+                <a
                   href="/#services"
                   className="hover:text-white transition"
                 >
                   Commercial Bin Cleaning
-                </Link>
+                </a>
               </li>
 
               <li>
-                <Link
+                <a
                   href="/#services"
                   className="hover:text-white transition"
                 >
-                  Driveway Pressure Washing
-                </Link>
+                  Dumpster Cleaning
+                </a>
               </li>
 
               <li>
-                <Link
-                  href="/#services"
-                  className="hover:text-white transition"
-                >
-                  Sidewalk Pressure Washing
-                </Link>
-              </li>
-
-              <li>
-                <Link
+                <a
                   href="/#services"
                   className="hover:text-white transition"
                 >
                   Crate & Tote Cleaning
-                </Link>
+                </a>
               </li>
 
               <li>
-                <Link
+                <a
                   href="/#services"
                   className="hover:text-white transition"
                 >
-                  Dumpster Pad Cleaning
-                </Link>
+                  Driveway Pressure Washing
+                </a>
               </li>
 
               <li>
-                <Link
+                <a
+                  href="/#services"
+                  className="hover:text-white transition"
+                >
+                  Sidewalk Pressure Washing
+                </a>
+              </li>
+
+              <li>
+                <a
                   href="/#services"
                   className="hover:text-white transition"
                 >
                   HOA & Apartment Services
-                </Link>
+                </a>
               </li>
 
             </ul>
@@ -158,7 +153,7 @@ export default function Footer() {
           {/* Quick Links */}
           <div>
 
-            <h3 className="text-xl font-bold mb-6">
+            <h3 className="text-xl font-bold mb-5">
               Quick Links
             </h3>
 
@@ -174,39 +169,39 @@ export default function Footer() {
               </li>
 
               <li>
-                <Link
+                <a
                   href="/#services"
                   className="hover:text-white transition"
                 >
                   Services
-                </Link>
+                </a>
               </li>
 
               <li>
-                <Link
+                <a
                   href="/#pricing"
                   className="hover:text-white transition"
                 >
                   Pricing
-                </Link>
+                </a>
               </li>
 
               <li>
-                <Link
+                <a
                   href="/#service-area"
                   className="hover:text-white transition"
                 >
                   Service Area
-                </Link>
+                </a>
               </li>
 
               <li>
-                <Link
+                <a
                   href="/#faq"
                   className="hover:text-white transition"
                 >
                   FAQ
-                </Link>
+                </a>
               </li>
 
               <li>
@@ -225,7 +220,7 @@ export default function Footer() {
           {/* Contact */}
           <div>
 
-            <h3 className="text-xl font-bold mb-6">
+            <h3 className="text-xl font-bold mb-5">
               Contact Us
             </h3>
 
@@ -233,7 +228,7 @@ export default function Footer() {
 
               {/* Business Name */}
               <div>
-                <p className="text-slate-500 text-sm uppercase tracking-wider">
+                <p className="text-slate-500 text-sm uppercase tracking-wide">
                   Business Name
                 </p>
 
@@ -244,7 +239,7 @@ export default function Footer() {
 
               {/* Phone */}
               <div>
-                <p className="text-slate-500 text-sm uppercase tracking-wider">
+                <p className="text-slate-500 text-sm uppercase tracking-wide">
                   Phone
                 </p>
 
@@ -258,7 +253,7 @@ export default function Footer() {
 
               {/* Email */}
               <div>
-                <p className="text-slate-500 text-sm uppercase tracking-wider">
+                <p className="text-slate-500 text-sm uppercase tracking-wide">
                   Email
                 </p>
 
@@ -272,7 +267,7 @@ export default function Footer() {
 
               {/* Service Area */}
               <div>
-                <p className="text-slate-500 text-sm uppercase tracking-wider">
+                <p className="text-slate-500 text-sm uppercase tracking-wide">
                   Service Area
                 </p>
 
